@@ -1,8 +1,9 @@
-*{
+*{ 
+    color: white;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .stage{
     text-align: center;
@@ -34,11 +35,12 @@
 }
 .retry{
     background-color: brown;
-    padding: 10px 30px;
+    padding: 10px 30px 12px 30px;
     border-radius: 5px;
     text-decoration: none;
     font-size: 1.5rem;
     color: white;
+    font-weight: bold;
 }
 .score-position{
     display: flex;
@@ -47,4 +49,19 @@
 }
 .score{
     font-size: 2rem;
+}
+body{
+    width: 100vw;
+    height: 100px;
+    background-color: #1E1E1E;
+}
+.how2play{
+    display: flex;
+    flex-direction: column;
+    grid-row: 2;
+    align-items: start;
+    padding-left: 50px;
+}
+.how2play p{
+    font-size: 1.5rem;
 }

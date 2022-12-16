@@ -36,7 +36,7 @@ window.onload = function (){
     placeFood();
     document.addEventListener('keyup', changeDirection);
 
-    setInterval(update, 60)
+    setInterval(update, 100)
 }
 
 function update() {
@@ -53,7 +53,6 @@ function update() {
         snakeBody.push([foodX, foodY])
         ponto.innerText = ++scoreGame;
          placeFood()
-         
     }
 
     for(let i = snakeBody.length-1; i > 0; i--){
@@ -65,8 +64,8 @@ function update() {
     }
     
     context.fillStyle='#063538';
-    snakeX += velX*blockSize;
-    snakeY += velY*blockSize;
+    snakeX += +velX*blockSize;
+    snakeY += +velY*blockSize;
     context.fillRect(snakeX, snakeY, blockSize, blockSize);
     for(let i =0; i < snakeBody.length; i++){
         context.fillRect(snakeBody[i][0], snakeBody[i][1], blockSize, blockSize)
