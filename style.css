@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.stage{
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#board{
+    margin: auto;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+.data{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    grid-column: 2/3;
+    margin: 10px auto;
+}
+.data p{
+    position: relative;
+    font-size: 2rem;
+}
+.retry{
+    background-color: brown;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+}
+.score-position{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.score{
+    font-size: 2rem;
+}
